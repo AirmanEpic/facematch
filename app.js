@@ -1,39 +1,38 @@
+window.nodeRequire = require;
+
+var $ = global.jQuery = require('./jquery-2.1.4.min');
+
+e = nodeRequire("electron");
+fs = nodeRequire("fs");
+
+THREE = require('three');
+
+mode = "handlePlacement"
+
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+var renderer = new THREE.WebGLRenderer();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.shadowMap.enabled = true;
+	renderer.shadowMap.autoUpdate = true;
+	renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.appendChild( renderer.domElement );
+
+camera.position.z = 0;
+camera.position.x = 0;
+camera.position.y = 0;
+var zoom = 45;
+
 mpos = {x:0,y:0}
 var ctx = {};
 var clicked_lm = 0;
 
-// var canvas = document.getElementById('canvas');
-// if (canvas.getContext) 
-// {
-// 	ctx = canvas.getContext('2d');
-// }
-
 
 function main(){
-	// document.body.addEventListener('mousedown', function(){
-	// 	if (mpos.x<canvas.width && mpos.y<canvas.height && mpos.x>0 && mpos.y>0)
-	// 	clicked_lm=1;
-	// }, true); 
 
-	// document.body.addEventListener('mouseup', function(){
-	// 	clicked_lm=3;
-	// }, true); 
-
-	// $("canvas").mousemove(function(e) {
-	// 	mpos.x = e.pageX - $('canvas').offset().left;
-	// 	mpos.y = e.pageY - $('canvas').offset().top;
-	// })
-
-	// draw();
 }
 
-// function draw(){
-// 	ctx.clearRect(0, 0, canvas.width, canvas.height)
-// 	ctx.fillStyle="white"
-// 	ctx.fillRect(0,0,canvas.width,canvas.height)
-
-// 	requestAnimationFrame(draw);
-// }
 
 function detectmob() { 
  if( navigator.userAgent.match(/Android/i)

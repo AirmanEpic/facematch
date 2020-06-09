@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/AirmanEpic/facematch/issues"
   },
-  "homepage": "https://github.com/AirmanEpic/facematch#readme"
+  "homepage": "https://github.com/AirmanEpic/facematch#readme",
+  "dependencies": {
+    "three-js": "^79.0.0"
+  }
 }
