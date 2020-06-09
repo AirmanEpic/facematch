@@ -1,0 +1,24 @@
+{
+  "name": "facematch",
+  "version": "0.0.1",
+  "description": "A way to quickly generate 3D face likenesses",
+  "main": "electron_app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AirmanEpic/facematch.git"
+  },
+  "keywords": [
+    "3D",
+    "face",
+    "facebuilder"
+  ],
+  "author": "AirmanEpic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AirmanEpic/facematch/issues"
+  },
+  "homepage": "https://github.com/AirmanEpic/facematch#readme"
+}
