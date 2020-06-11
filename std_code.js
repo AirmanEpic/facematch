@@ -19,7 +19,7 @@ function y_rotation(x, y, z, dir)
 	yout = y
 	zout = z
 
-	//matrix multiplication times the x transformation matrix. https://en.wikipedia.org/wiki/Rotation_matrix
+	//matrix multiplication times the y transformation matrix. https://en.wikipedia.org/wiki/Rotation_matrix
 	xout = (Math.cos(dir)*x) + (Math.sin(dir)*z)
 	yout = y
 	zout = (-Math.sin(dir)*x) + (Math.cos(dir)*z);
@@ -34,7 +34,7 @@ function z_rotation(x, y, z, dir)
 	yout = y
 	zout = z
 
-	//matrix multiplication times the x transformation matrix. https://en.wikipedia.org/wiki/Rotation_matrix
+	//matrix multiplication times the z transformation matrix. https://en.wikipedia.org/wiki/Rotation_matrix
 	xout = (Math.cos(dir) * x)  + (Math.sin(dir) * y);
 	yout = -(Math.sin(dir) * x) + (Math.cos(dir) * y);
 	zout = z
